@@ -18,6 +18,9 @@
 .fa-0::before {
   content: "\30"; }
 
+.fa-bilibili::before {
+  content: "\e61a";
+
 .fa-1::before {
   content: "\31"; }
 
