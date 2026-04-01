@@ -1,5 +1,5 @@
 // API配置
-const API_BASE_URL = 'white-smoke-618a.ptian3008.workers.dev';
+const API_BASE_URL = 'https://adminzy.20010501.xyz';
 
 // GitHub用户名将从API获取
 let GITHUB_USERNAME = 'IonRh'; // 默认值，将被API数据覆盖
