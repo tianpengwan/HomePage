@@ -1,49 +1,48 @@
-/* 本地Font Awesome图标 */
+/* 本地Font Awesome图标 - 修复版 */
+/* 1. 引入 实心图标字体 (大部分图标都用这个) */
+@font-face {
+  font-family: 'FontAwesome';
+  src: url('./fonts/fa-solid-900.woff2') format('woff2');
+  font-weight: 900;
+  font-style: normal;
+  font-display: block;
+}
+/* 2. 引入 品牌图标字体 (fab 类用这个) */
 @font-face {
   font-family: 'FontAwesome';
   src: url('./fonts/fa-brands-400.woff2') format('woff2');
-  font-weight: normal;
+  font-weight: 400;
   font-style: normal;
+  font-display: block;
 }
 
+/* 基础样式 */
 .fa, .fas, .fab {
   display: inline-block;
-  font: normal normal normal 14px/1 FontAwesome;
+  font-family: 'FontAwesome';
   font-size: inherit;
   text-rendering: auto;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+.fas, .fa {
+  font-weight: 900; /* 实心图标必须加 900 字重 */
+}
+.fab {
+  font-weight: 400; /* 品牌图标 400 字重 */
+}
 
-.fa-0::before {
-  content: "\30"; }
-
-.fa-1::before {
-  content: "\31"; }
-
-.fa-2::before {
-  content: "\32"; }
-
-.fa-3::before {
-  content: "\33"; }
-
-.fa-4::before {
-  content: "\34"; }
-
-.fa-5::before {
-  content: "\35"; }
-
-.fa-6::before {
-  content: "\36"; }
-
-.fa-7::before {
-  content: "\37"; }
-
-.fa-8::before {
-  content: "\38"; }
-
-.fa-9::before {
-  content: "\39"; }
+/* 数字图标 */
+.fa-0::before { content: "\30"; }
+.fa-1::before { content: "\31"; }
+.fa-2::before { content: "\32"; }
+.fa-3::before { content: "\33"; }
+.fa-4::before { content: "\34"; }
+.fa-5::before { content: "\35"; }
+.fa-6::before { content: "\36"; }
+.fa-7::before { content: "\37"; }
+.fa-8::before { content: "\38"; }
+.fa-9::before { content: "\39"; }
 
 .fa-fill-drip::before {
   content: "\f576"; }
